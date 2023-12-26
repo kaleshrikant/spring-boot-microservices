@@ -1,0 +1,55 @@
+//DEPARTMENT-SERVICE :
+POST - In
+------------
+{
+"departmentName" : "IT",
+"departmentAddress" : "3rd Cross, First Street",
+"departmentCode" : "12"
+}
+
+Out
+{
+"departmentName": "IT",
+"departmentAddress": "3rd Cross, First Street",
+"departmentId": 1,
+"departmentCode": "12"
+}
+
+
+//USER-SERVICE :
+POST - In:
+------------
+{
+"firstName" : "Shrikant",
+"lastName" : "Kale",
+"email" : "shrikant@kale.com",
+"departmentId" : "1"
+}
+
+Out:
+{
+"firstName": "Shrikant",
+"lastName": "Kale",
+"departmentId": 1,
+"userId": 7,
+"email": "shrikant@kale.com"
+}
+
+GET - Final :
+------------
+{
+"department": {
+"departmentName": "IT",
+"departmentAddress": "3rd Cross, First Street",
+"departmentId": 1,
+"departmentCode": "12"
+},
+"user": {
+"firstName": "Shrikant",
+"lastName": "Kale",
+"departmentId": 1,
+"userId": 7,
+"email": "shrikant@kale.com"
+}
+}
+
