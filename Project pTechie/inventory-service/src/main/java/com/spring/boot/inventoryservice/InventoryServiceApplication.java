@@ -26,7 +26,7 @@ public class InventoryServiceApplication {
 			Inventory inventory2 = Inventory
 					.builder()
 					.skuCode("iPhone13-Red")
-					.quantity(1)
+					.quantity(0)
 					.build();
 
 			inventoryRepository.save(inventory1);

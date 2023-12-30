@@ -1,0 +1,37 @@
+Request : http://localhost:8081/api/order
+Input :
+
+{
+"orderLineItemsDtoList": [
+{
+"skuCode": "iPhone13",
+"price": 1200,
+"quantity": 100
+},
+{
+"skuCode": "iPhone13-Red",
+"price": 1200,
+"quantity": 100
+}
+]
+}
+
+Response :
+java.lang.IllegalArgumentException: Product is not in stock, please try again later.
+
+
+Request :
+
+{
+  "orderLineItemsDtoList": [
+    {
+      "skuCode": "iPhone13",
+      "price": 1200,
+      "quantity": 100
+    }
+  ]
+}
+
+Response :
+
+"Order placed successfully."
