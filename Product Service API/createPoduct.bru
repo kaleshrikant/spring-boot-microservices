@@ -1,0 +1,19 @@
+meta {
+  name: createPoduct
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/product
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "iPhone13",
+    "description": "iPhone13",
+    "price": "1200"
+  }
+}
