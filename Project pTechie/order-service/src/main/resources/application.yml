@@ -53,3 +53,9 @@ resilience4j:
       inventory:
         max-attempts: 3
         wait-duration: 5s
+# Sleuth + Zipkin
+  zipkin:
+    baseUrl: https://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1.0

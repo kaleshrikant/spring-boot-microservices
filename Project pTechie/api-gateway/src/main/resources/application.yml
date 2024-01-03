@@ -25,3 +25,9 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 server:
   port: 8888
+# Sleuth + Zipkin
+  zipkin:
+    baseUrl: https://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1.0

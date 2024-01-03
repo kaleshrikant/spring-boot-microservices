@@ -13,3 +13,10 @@ eureka:
 
 server:
   port: 8761
+
+# Sleuth + Zipkin
+  zipkin:
+    baseUrl: https://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 1.0
